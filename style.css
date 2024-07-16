@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to center the calculator in the miidle horizontaly and vertically*/
+    height: 100vh;
+    background-color: rgb(230, 224, 215);
+
+}
+
+#calculator{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    border-radius: 15px;
+    max-width: 250px;
+    /*in case we have a long equation*/
+    overflow: hidden;
+   
+    
+}
+
+#display {
+    color: white;
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(63, 58, 58);
+}
+
+.fresh{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+
+
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(62, 60, 60);
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: rgb(123, 108, 90);
+}
+
+/*to make the buutons flash light when you click on it*/
+button:active{
+    background-color: rgb(184, 171, 171);
+}
+
+.operator-button{
+    background-color: red;
+
+}
+
+.operator-button:hover{
+    background-color: rgb(209, 78, 78);
+}
+
+/*to make the buutons flash light when you click on it*/
+.operator-button:active{
+    background-color: rgb(222, 181, 181);
+
+}
+
